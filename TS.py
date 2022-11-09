@@ -1,5 +1,6 @@
+nums, target = input()
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(a, b ,target):
         for i in nums:
             for j in nums:
                 if i + j == target:
