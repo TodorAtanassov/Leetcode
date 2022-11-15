@@ -1,7 +1,9 @@
 nums, target = input()
+
+
 class Solution:
-    def twoSum(a, b ,target):
-        for i in nums:
-            for j in nums:
-                if i + j == target:
-                    return [nums.index(i), nums.index(j)]
+    def twoSum(self, nums, target):
+        for i in range(len(nums)):
+            for j in range(len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
