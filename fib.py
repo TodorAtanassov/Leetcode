@@ -1,10 +1,10 @@
-def fib(n):
-    if n == 0:
-        return 0
-    elif n <= 2:
-        return 1
-    else:
-        return fib(n - 1) + fib(n - 2)
+from library import square
 
 
-print(fib(6))
+def test_square():
+    assert square(2) == 4
+    assert square(3) == 9
+    assert square(-3) == 9
+    assert square(-2) == 4
+    assert square(0) == 0
+
